@@ -17,3 +17,42 @@
  .animation-five{
    -webkit-animation-delay: 2.5s;
  }
+
+/*
+*
+*
+*
+*
+*/
+
+ .ms-1{
+   -webkit-animation-delay: .1s;
+ }
+
+ .ms-2{
+   -webkit-animation-delay: .2s;
+ }
+
+ .ms-3{
+   -webkit-animation-delay: .3s;
+ }
+
+ .ms-4{
+   -webkit-animation-delay: .4s;
+ }
+
+ .ms-5{
+   -webkit-animation-delay: .5s;
+ }
+
+ .ms-6{
+   -webkit-animation-delay: .6s;
+ }
+
+ .ms-7{
+   -webkit-animation-delay: .7s;
+ }
+
+ .ms-8{
+   -webkit-animation-delay: .8s;
+ }

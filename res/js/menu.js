@@ -5,15 +5,11 @@ function scrollChange(){
   var headerSize = $("#menuBar").height();
 
   if (distanceY > shrinkOn) {
-    $("#menuBar").animate({ height:'70px'}, 0);
     $("#menuBar").css('background', 'rgba(255, 255, 255, 1)');
     $("#menuBar").css('border-bottom', '1px solid rgba(200, 200, 200, 0.5)');
-    $("#logo").animate({ height:'40px'}, 0);
   } else {
     if (headerSize < 101) {
-      $("#menuBar").animate({ height:'100px'}, 0);
       $("#menuBar").css('background', 'rgba(0, 0, 0, 0)');
-      $("#logo").animate({ height:'50px'}, 0);
       $("#menuBar").css('border-bottom', '1px solid rgba(200, 200, 200, 0)');
     }
   }
@@ -49,6 +45,19 @@ function scrollMenu(){
     $("#menuBar").animate({ height:'0'}, 600);
     //console.log("Sube");
   }
+}
+
+
+function showMenu(){
+  var menu = document.getElementById('menu-full');
+  menu.style.display = "";
+  $("#menu-full").css('background', 'rgba(85, 172, 238, 0.95)');
+}
+
+function hideMenu(){
+  var menu = document.getElementById('menu-full');
+  $("#menu-full").css('background', 'rgba(85, 172, 238, 0)');
+  menu.style.display = "none";
 }
 
 //$(menu).animate({left: "-=300px"}, 300);

@@ -30,9 +30,7 @@
       <div class="logo">
         <div class="logo-item">
           <a href="home.html">
-            <!--
             <img src="res/img/elmts/logo.png" alt="" id="logo"/>
-          -->
           </a>
         </div>
       </div>
@@ -44,12 +42,79 @@
           </span>
         </a>
         <a href="#" class="m-item" onmouseover="">
-          <span>
+          <span onclick="showMenu()">
             <i class="fa fa-bars"></i>
           </span>
         </a>
       </div>
     </header>
+
+    <div class="menu-full white-txt" style="display: none;" id="menu-full">
+      <span class="section wow fadeIn">
+        Services
+      </span>
+      <br>
+      <a href="expert.html">
+        <div class="item wow flipInX ms-1">
+          <i class="fa fa-briefcase"></i>
+          &nbsp;
+          Expert Insights
+        </div>
+      </a>
+      <a href="tenders.html">
+        <div class="item wow flipInX ms-2">
+          <i class="fa fa-book"></i>
+          &nbsp;
+          Tenders
+        </div>
+      </a>
+      <a href="tech.html">
+        <div class="item wow flipInX ms-3">
+          <i class="fa fa-laptop"></i>
+          &nbsp;
+          Technological Programs
+        </div>
+      </a>
+      <a href="knowledge.html">
+        <div class="item wow flipInX ms-4">
+          <i class="fa fa-graduation-cap"></i>
+          &nbsp;
+          Sharing Knowledge
+        </div>
+      </a>
+      <a href="#">
+        <div class="item wow flipInX ms-5">
+          <i class="fa fa-gavel"></i>
+          &nbsp;
+          Legal
+        </div>
+      </a>
+      <br><br>
+      <span class="section wow fadeIn">
+        More
+      </span>
+      <br>
+      <a href="#">
+        <div class="item wow flipInX ms-5">
+          <i class="fa fa-users"></i>
+          &nbsp;
+          About us
+        </div>
+      </a>
+      <a href="#">
+        <div class="item wow flipInX ms-5">
+          <i class="fa fa-envelope"></i>
+          &nbsp;
+          Contact
+        </div>
+      </a>
+      <br><br><br>
+      <div class="close wow flipInX ms-1" onclick="hideMenu()">
+        <i class="fa fa-times"></i>
+        &nbsp;
+        Close
+      </div>
+    </div>
 
     <div class="cover parallax-window" data-parallax="scroll" data-image-src="res/img/elmts/cover.jpg">
       <div class="title white-txt center wow fadeIn">
@@ -60,6 +125,67 @@
           <br>
           showing unity and coherence.
         </span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="cell quarters service">
+        <img src="res/img/elmts/expert.jpg" alt=""/>
+        <a href="expert.html">
+          <div class="content">
+            Expert Insights
+          </div>
+        </a>
+      </div><!--
+      --><div class="cell quarters service">
+        <img src="res/img/elmts/tender.jpg" alt=""/>
+        <a href="tenders.html">
+          <div class="content">
+            Tenders
+          </div>
+        </a>
+      </div><!--
+      --><div class="cell quarters service">
+        <img src="res/img/elmts/tech.jpg" alt=""/>
+        <a href="tech.html">
+          <div class="content">
+            Technological Programs
+          </div>
+        </a>
+      </div><!--
+      --><div class="cell quarters service">
+        <img src="res/img/elmts/sharing.jpg" alt=""/>
+        <a href="knowledge.html">
+          <div class="content">
+            Sharing Knowledge
+          </div>
+        </a>
+      </div><!--
+      --><div class="cell quarters service">
+        <img src="res/img/elmts/legal.jpg" alt=""/>
+        <a href="#">
+          <div class="content">
+            Legal
+          </div>
+        </a>
+      </div><!--
+      --><div class="cell quarters service">
+        <img src="res/img/elmts/XX.jpg" alt=""/>
+        <div class="content">
+
+        </div>
+      </div><!--
+      --><div class="cell quarters service">
+        <img src="res/img/elmts/XX.jpg" alt=""/>
+        <div class="content">
+
+        </div>
+      </div><!--
+      --><div class="cell quarters service">
+        <img src="res/img/elmts/XX.jpg" alt=""/>
+        <div class="content">
+
+        </div>
       </div>
     </div>
 
@@ -80,37 +206,11 @@
     <div class="row center pad-50 soft-txt">
       <div class="container ">
         <div class="cell mids justify">
+          <h3>About us</h3>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div><!--
         --><div class="cell mids right" style="">
           <img src="res/img/elmts/employees.jpg" alt="" id="" style="width: 90%;"/>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="cell quarters service">
-        <img src="res/img/elmts/expert.jpg" alt=""/>
-        <div class="content">
-          Expert Insights
-        </div>
-      </div><!--
-      --><div class="cell quarters service">
-        <img src="res/img/elmts/tender.jpg" alt=""/>
-        <div class="content">
-          Tenders
-        </div>
-      </div><!--
-      --><div class="cell quarters service">
-        <img src="res/img/elmts/tech.jpg" alt=""/>
-        <div class="content">
-          Technological Programs
-        </div>
-      </div><!--
-      --><div class="cell quarters service">
-        <img src="res/img/elmts/sharing.jpg" alt=""/>
-        <div class="content">
-          Sharing Knowledge
         </div>
       </div>
     </div>
@@ -209,6 +309,8 @@
           </div>
         </div>
       </div>
+
+  </div>
 
 
 
