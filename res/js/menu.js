@@ -51,7 +51,7 @@ function scrollMenu(){
 function showMenu(){
   var menu = document.getElementById('menu-full');
   menu.style.display = "";
-  $("#menu-full").css('background', 'rgba(85, 172, 238, 0.95)');
+  $("#menu-full").css('background', 'rgba(102, 117, 127, 0.95)');
 }
 
 function hideMenu(){

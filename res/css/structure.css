@@ -214,7 +214,7 @@ header.smaller{
 
 .menu-full .item:hover{
   background: rgba(255, 255, 255, 1);
-  color: rgba(85, 172, 238, 1);
+  color: rgba(102, 117, 127, 1);
 }
 
 .menu-full .close:hover{
@@ -333,6 +333,55 @@ header.smaller{
 }
 
 /************
+  FORM
+*************/
+
+.txt-field{
+  width: 80%;
+  border: 1px solid #B4B4B4;
+  border-radius: 0px;
+  padding: 8px;
+  outline: none;
+  font-size: 15px;
+  background: white;
+
+  -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    -ms-transition: background 0.5s;
+    -o-transition: background 0.5s;
+    transition: background 0.5s;
+}
+
+.txt-field:focus{
+  border-color: #3b5998;
+  background: rgba(59, 89, 152, 0.1);
+  color:  #3b5998;
+}
+
+.txt-box{
+  width: 80%;
+  border: 1px solid #B4B4B4;
+  border-radius: 0px;
+  padding: 8px;
+  outline: none;
+  font-size: 15px;
+  background: white;
+  resize: none;
+
+  -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    -ms-transition: background 0.5s;
+    -o-transition: background 0.5s;
+    transition: background 0.5s;
+}
+
+.txt-box:focus{
+  border-color:  #3b5998;
+  background: rgba(59, 89, 152, 0.1);
+  color:  #3b5998;
+}
+
+/************
   SPACES
 *************/
 
@@ -441,35 +490,18 @@ label{
 }
 
 .service{
-  position: relative;
   height: 210px;
-  overflow: hidden;
-  display: inline-block;
-  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-  box-sizing: border-box;
+  vertical-align: top;
 }
 
-.service img{
-  width: 100%;
+.service-content{
+  background: rgba(59, 89, 152, 0.75);
   height: 100%;
-  z-index: 5;
-}
-
-.service .content{
-  position: absolute;
-  overflow: hidden;
-  color: white;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  background: rgba(59, 89, 152, 0.5);
-  z-index: 6;
-  font-size: 30px;
   padding: 15px;
+  font-size: 30px;
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-  box-sizing: border-box;
+  box-sizing: border-box;         /* Opera/IE 8+ */
   -webkit-transition: background 0.5s;
     -moz-transition: background 0.5s;
     -ms-transition: background 0.5s;
@@ -477,8 +509,8 @@ label{
     transition: background 0.5s;
 }
 
-.service .content:hover{
-  background: rgba(59, 89, 152, 0.9);
+.service-content:hover{
+  background: rgba(59, 89, 152, 0.95);
 }
 
 .cv{
@@ -504,6 +536,30 @@ label{
 
 .photo-cv img{
   width: 100%;
+}
+
+.point{
+  display: inline-block;
+  padding: 15px;
+  font-size: 15px;
+  background: whitesmoke;
+  margin: 3px;
+}
+
+.point:hover{
+  background: rgba(59, 89, 152, 0.5);
+  color: white;
+}
+
+.company{
+  height: 70px;
+  opacity: 0.3;
+  margin: 15px;
+
+}
+
+.company:hover{
+  opacity: 1;
 }
 
 .multiple-columns ul{
