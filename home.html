@@ -25,6 +25,14 @@
 
   <body onscroll="scrollChange()">
 
+    <div class="video-full pad-50 white-txt center" id="videoContainer" style="display: none;">
+      <video width="80%" controls id="videoBC">
+        <source src="res/video/BCSavings.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <h4 onclick="hideVideo()">Close</h4>
+    </div>
+
     <header class="center" style="font-size: 20px;" id="menuBar">
 
       <div class="logo">
@@ -39,11 +47,6 @@
         <a href="#" class="m-item reg-txt" onmouseover="">
           <span>
             Spanish
-          </span>
-        </a>
-        <a href="#" class="m-item reg-txt" onmouseover="">
-          <span>
-            English
           </span>
         </a>
         <a href="contact.html" class="m-item" onmouseover="">
@@ -194,9 +197,11 @@
       </div>
     </div>
 
-    <div class="row center pad-50">
-      <div class="container reg-txt">
-        <h4><i class="fa fa-play"></i> &nbsp; Watch video</h4>
+    <div class="row pad-50">
+      <div class="container center pad-50" style="">
+        <div id="video-btn" onclick="showVideo()" class="ghost-color-main" style="width: 300px; margin: 0 auto; font-size: 30px;">
+          <i class="fa fa-play"></i>&nbsp; Watch Video
+        </div>
       </div>
     </div>
 
@@ -213,12 +218,12 @@
     </div>
 
     <div class="row center pad-50 soft-txt">
-      <div class="container ">
+      <div class="container">
         <div class="cell justify" style="max-width: 500px; vertical-align: top;">
           <h3>About us</h3>
           We are a great team, passionate for the work that we done on purchase, consulting services and business strategies with our clients in order to build long productive win-win relation.
           <br><br>
-          We have the experience and knowledge of a generational mix that enriches the organization to help your company to generate higher profits through savings (between 10 and 25%). We work with all kind of clients, sectors and regions in order to identify your business opportunities. <a href="about.html">Read more...</a>
+          We have the experience and knowledge of a generational mix that enriches the organization to help your company to generate higher profits through <b>savings (between 10% and 25%)</b>. We work with all kind of clients, sectors and regions in order to identify your business opportunities. <a href="about.html">Read more...</a>
         </div><!--
         --><div class="cell center" style="">
           <div class="cv" style="margin-left: 20px;">

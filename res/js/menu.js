@@ -60,4 +60,14 @@ function hideMenu(){
   menu.style.display = "none";
 }
 
+function showVideo(){
+  document.getElementById('videoContainer').style.display = "";
+  document.getElementById('videoBC').play();
+}
+
+function hideVideo(){
+  document.getElementById('videoContainer').style.display = "none";
+  document.getElementById('videoBC').pause();
+}
+
 //$(menu).animate({left: "-=300px"}, 300);
