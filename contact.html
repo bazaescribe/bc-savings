@@ -22,6 +22,8 @@
 
     <script type="text/javascript" src="res/js/menu.js"></script>
 
+
+
   </head>
 
   <body onscroll="scrollChange()">
@@ -159,11 +161,16 @@
     </div>
 
     <div class="row">
+      <div class="mids cell center pad-50 white-txt" id="map" style="height: 300px;"></div><!--
+      --><div class="mids cell center pad-50 white-txt" id="map2" style="height: 300px;"></div>
+    </div>
+
+    <div class="row">
       <div class="mids cell center pad-50 white-txt" style="font-size: 50px;" data-parallax="scroll" data-image-src="res/img/elmts/mexico.jpg">
-        México
+        Mexico
       </div><!--
       --><div class="mids cell center pad-50 white-txt" style="font-size: 50px;" data-parallax="scroll" data-image-src="res/img/elmts/panama.jpg">
-        Panamá
+        Panama
       </div>
     </div>
 
@@ -175,19 +182,11 @@
             <img src="res/img/elmts/logo2.png" alt="" class="" style="width: 90%; vertical-align: middle"/>
           </div><!--
           --><div class="quarters cell justify" style="padding: 0px 20px 0px 20px;">
-            Contáctanos
+            Contact Us
             <br><br>
-            Panamá
-            <br>
-            Tel. 555-5555
-            <br>
-            mail@mail.com
+            Mexico / Panama
             <br><br>
-            México
-            <br>
-            Tel. 555-5555
-            <br>
-            mail@mail.com
+            contacto@bcsavings.ceo
           </div><!--
           --><div class="quarters cell left main-txt" style="vertical-align: top;">
             <a href="expert.html">
@@ -232,7 +231,7 @@
                 <i class="fa fa-linkedin fa-2x"></i>
               </a>
               &nbsp;
-              <a href="#">
+              <a href="https://twitter.com/BCSavings" target="_blank">
                 <i class="fa fa-twitter fa-2x"></i>
               </a>
               &nbsp;
@@ -240,7 +239,7 @@
                 <i class="fa fa-facebook-square fa-2x"></i>
               </a>
               &nbsp;
-              <a href="#">
+              <a href="https://www.youtube.com/channel/UC1LZY0UhzJKT43dablKG_bA" target="_blank">
                 <i class="fa fa-youtube-play fa-2x"></i>
               </a>
             </div>
@@ -255,6 +254,49 @@
     $(document).ready(function() {
       $('#f').scrollToFixed({ limit: 1700, zIndex: 3});
     });
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map');
+        var mapOptions = {
+          center: new google.maps.LatLng(19.393047, -99.174115),
+          zoom: 16,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          scrollwheel: false
+        }
+
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(19.418227, -99.218036),
+          map: map,
+          title: 'Hello World!'
+        });
+
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map2');
+        var mapOptions = {
+          center: new google.maps.LatLng(8.975662, -79.521681),
+          zoom: 16,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          scrollwheel: false
+        }
+
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(19.418227, -99.218036),
+          map: map,
+          title: 'Hello World!'
+        });
+
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
     </script>
 
 
