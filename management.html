@@ -22,8 +22,6 @@
 
     <script type="text/javascript" src="res/js/menu.js"></script>
 
-
-
   </head>
 
   <body onscroll="scrollChange()">
@@ -138,54 +136,50 @@
       </div>
     </div>
 
-    <div class="cover-section parallax-window" data-parallax="scroll" data-image-src="res/img/elmts/contact-head.jpg">
+    <div class="cover-section parallax-window" data-parallax="scroll" data-image-src="res/img/elmts/expert-head.jpg">
       <div class="title hv-txt center wow fadeIn">
-        <h2>Contact us</h2>
+        <h2>Management Services</h2>
       </div>
     </div>
 
     <div class="row center pad-30">
       <div class="container justify soft-txt">
-        Question, comment or concern? Our contact form is the best way to get in touch with someone at BC & Savings.
+        Taking as a base the procedures and manuals management of the companies, are established the norms to follow in order to enhance and develop the corporate manuals, agreement’s monitoring with the suppliers, as market research that will provide with the support necessary in order to achieve the aims of each company as: budget fulfillment, internal communication.
+        <br><br>
+        Independent and objective monitoring activity and consulting services activity designed to add value and improve an organization's operations. It helps an organization accomplish its objectives by bringing a systematic, disciplined approach to evaluate and improve the effectiveness of risk management processes, control and governance processes. The internal audit is a catalyst for improving management controls of the organization, management and risk management, providing a vision and recommendations based on the analysis and evaluation of data and business processes.
+        <br><br>
+        Based on various market studies (based on the company's aims) in order to know the positioning and commercial viability of a company, and also in order to obtain the information required to help the companies to cope with currently market conditions changing, and for decision-making for its own development.
       </div>
     </div>
 
     <div class="row center pad-30">
-      <div class="container center soft-txt">
-        <form action="mail.php" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" name="name" value="" id="name" class="txt-field">
-            <br><br>
-            <label for="company">Company:</label>
-            <input type="text" name="company" value="" id="company" class="txt-field">
-            <br><br>
-            <label for="last-name">E-Mail</label>
-            <input type="text" name="mail" value="" id="last-name" class="txt-field">
-            <br><br>
-            <label for="phone">Phone</label>
-            <input type="text" name="phone" value="" id="phone" class="txt-field">
-            <br><br>
-            <label for="message">Message</label>
-            <textarea name="message" cols="40" rows="5" class="txt-box"></textarea>
-            <br><br><br>
-            <input type="submit" value="Enviar" class="ghost-color-main" style="width: 50%;">
-            <!--<input type="button" name="name" value="Enviar" class="ghost-color" style="width: 50%;">-->
-        </form>
+      <div class="container center soft-txt multiple-columns">
+        <div class="point">
+          Suppliers Review
+        </div>
+        <div class="point">
+          Internal Audit
+        </div>
+        <div class="point">
+          Agreement’s monitoring
+        </div>
+        <div class="point">
+          Process Review
+        </div>
+        <div class="point">
+          Internal Communication
+        </div>
+        <div class="point">
+          Budget, process, projects and manuals fulfillment’s
+        </div>
+        <div class="point">
+          Purchase Management
+        </div>
+        <div class="point">
+          Repricing
+        </div>
       </div>
-    </div>
-
-    <div class="row">
-      <div class="mids cell center pad-50 white-txt" id="map" style="height: 300px;"></div><!--
-      --><div class="mids cell center pad-50 white-txt" id="map2" style="height: 300px;"></div>
-    </div>
-
-    <div class="row">
-      <div class="mids cell center pad-50 white-txt" style="font-size: 50px;" data-parallax="scroll" data-image-src="res/img/elmts/mexico.jpg">
-        Mexico
-      </div><!--
-      --><div class="mids cell center pad-50 white-txt" style="font-size: 50px;" data-parallax="scroll" data-image-src="res/img/elmts/panama.jpg">
-        Panama
-      </div>
+      <br><br>
     </div>
 
     <div class="footer">
@@ -268,49 +262,6 @@
     $(document).ready(function() {
       $('#f').scrollToFixed({ limit: 1700, zIndex: 3});
     });
-    </script>
-
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script>
-      function initialize() {
-        var mapCanvas = document.getElementById('map');
-        var mapOptions = {
-          center: new google.maps.LatLng(19.393047, -99.174115),
-          zoom: 16,
-          mapTypeId: google.maps.MapTypeId.ROADMAP,
-          scrollwheel: false
-        }
-
-        var marker = new google.maps.Marker({
-          position: new google.maps.LatLng(19.418227, -99.218036),
-          map: map,
-          title: 'Hello World!'
-        });
-
-        var map = new google.maps.Map(mapCanvas, mapOptions)
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
-
-    <script>
-      function initialize() {
-        var mapCanvas = document.getElementById('map2');
-        var mapOptions = {
-          center: new google.maps.LatLng(8.975662, -79.521681),
-          zoom: 16,
-          mapTypeId: google.maps.MapTypeId.ROADMAP,
-          scrollwheel: false
-        }
-
-        var marker = new google.maps.Marker({
-          position: new google.maps.LatLng(19.418227, -99.218036),
-          map: map,
-          title: 'Hello World!'
-        });
-
-        var map = new google.maps.Map(mapCanvas, mapOptions)
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
     </script>
 
 
