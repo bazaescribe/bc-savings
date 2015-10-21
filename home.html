@@ -31,7 +31,11 @@
         <source src="res/video/BCSavings.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
-      <h4 onclick="hideVideo()">Close</h4>
+      <h4 onclick="hideVideo()">
+        <a href="#" style="text-decoration: none; color: white;">
+          Close
+        </a>
+      </h4>
     </div>
 
     <header class="center" style="font-size: 20px;" id="menuBar">
@@ -137,7 +141,7 @@
         </div>
       </a>
       <br><br>
-      <a href="#" target="_blank">
+      <a href="https://www.linkedin.com/company/business-consulting-&-savings" target="_blank">
         <div class="item wow flipInX ms-5">
           <i class="fa fa-linkedin"></i>
         </div>
@@ -147,7 +151,7 @@
           <i class="fa fa-twitter"></i>
         </div>
       </a>
-      <a href="#" target="_blank">
+      <a href="https://www.facebook.com/bcsavings" target="_blank">
         <div class="item wow flipInX ms-5">
           <i class="fa fa-facebook"></i>
         </div>
@@ -297,7 +301,7 @@
           </span>
           <br>
           <span class="position">
-            Project Manager
+            CIO
             <br>
             arturogaitan@bcsavings.ceo
             <br>
@@ -347,12 +351,34 @@
         <h3>Our partners</h3>
         <br>
         <div class="center parters">
+          <a href="http://www.red-wolf.com.mx" target="_blank">
           <img src="res/img/elmts/partners/redwolf.png" alt="" class="company"/>
+          </a>
+          <a href="http://www.notaria222.com.mx/" target="_blank">
           <img src="res/img/elmts/partners/notaria222.jpg" alt="" class="company"/>
+          </a>
         </div>
       </div>
       <br><br>
     </div>
+
+	  <div class="row wrapper">
+      <div class="mids cell center pad-50 white-txt" id="map" style="height: 300px;"></div><!--
+      --><div class="mids cell center pad-50 white-txt" id="map2" style="height: 300px;"></div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="mids cell center pad-50 white-txt" style="font-size: 50px;" data-parallax="scroll" data-image-src="res/img/elmts/mexico.jpg">
+        Mexico
+      </div><!--
+      --><div class="mids cell center pad-50 white-txt" style="font-size: 50px;" data-parallax="scroll" data-image-src="res/img/elmts/panama.jpg">
+        Panama
+      </div>
+    </div>
+
+
 
     <div class="footer">
       <!--Sup footer-->
@@ -363,10 +389,16 @@
           </div><!--
           --><div class="quarters cell justify" style="padding: 0px 20px 0px 20px;">
             Contact Us
-            <br><br>
-            Mexico / Panama
+             <br><br>
+            Panamá
+            <br>
+            Tel. (+507) 6780 4365
             <br><br>
             contacto@bcsavings.ceo
+            <br><br>
+            México
+            <br>
+            Tel. (+52) 55 5967 0355
           </div><!--
           --><div class="quarters cell left main-txt" style="vertical-align: top;">
             <a href="expert.html">
@@ -394,6 +426,16 @@
                 Corporate Legal Consulting
               </div>
             </a>
+            <a href="identity.html">
+              <div class="service-footer">
+                Corporate Identity
+              </div>
+            </a>
+            <a href="management.html">
+              <div class="service-footer">
+                Administration Services
+              </div>
+            </a>
           </div><!--
           --><div class="quarters cell left" style="vertical-align: top;">
             <a href="about.html">
@@ -407,7 +449,7 @@
               </div>
             </a>
             <div class="service-footer">
-              <a href="#">
+              <a href="https://www.linkedin.com/company/business-consulting-&-savings" target="_blank">
                 <i class="fa fa-linkedin fa-2x"></i>
               </a>
               &nbsp;
@@ -415,7 +457,7 @@
                 <i class="fa fa-twitter fa-2x"></i>
               </a>
               &nbsp;
-              <a href="#">
+              <a href="https://www.facebook.com/bcsavings" target="_blank">
                 <i class="fa fa-facebook-square fa-2x"></i>
               </a>
               &nbsp;
@@ -428,7 +470,60 @@
       </div>
   </div>
 
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $('#f').scrollToFixed({ limit: 1700, zIndex: 3});
+    });
+    </script>
 
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map');
+
+        var mapOptions = {
+          center: new google.maps.LatLng(19.393047, -99.174115),
+          zoom: 16,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          scrollwheel: false
+        }
+
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(19.393050, -99.174115),
+          title: 'Hello World!'
+        });
+
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+        marker.setMap(map);
+      }
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map2');
+        var mapOptions = {
+          center: new google.maps.LatLng(8.975662, -79.521681),
+          zoom: 16,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          scrollwheel: false
+        }
+
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(8.975662, -79.521681),
+          title: 'Hello World!'
+        });
+
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+        marker.setMap(map);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+    <script>
+     new WOW().init();
+    </script>
 
     <script type="text/javascript">
     $(document).ready(function() {
