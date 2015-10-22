@@ -306,6 +306,10 @@ header.smaller{
   overflow-x: hidden;
 }
 
+.container{
+  padding: 0px 15% 0px 15%;
+}
+
 /************
   CELLS
 *************/
@@ -586,4 +590,83 @@ label{
 
 .service-footer{
   margin-bottom: 10px;
+}
+
+.video-button{
+  width: 50%;
+  margin: 0 auto;
+  font-size: 40px;
+}
+
+@media screen and (max-width: 950px) {
+    .mids {
+    }
+
+    .thirds{
+
+    }
+
+    .quarters{
+      width: 50%;
+    }
+
+    .menu-full{
+      padding: 5px;
+    }
+
+    .menu-full .item{
+      font-size: 15px;
+      padding: 5px;
+      margin: 2px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .mids {
+      width: 100%;
+    }
+
+    .thirds{
+    }
+
+    .quarters{
+      width: 100%;
+    }
+
+    .menu-full{
+      padding: 5px;
+    }
+
+    .menu-full .item{
+      font-size: 15px;
+      padding: 5px;
+      margin: 2px;
+    }
+
+    .container{
+      padding: 0px 3% 0px 3%;
+    }
+
+    .video-button{
+      width: 80%;
+      margin: 0 auto;
+      font-size: 20px;
+    }
+
+    .logo{
+      left: 10px;
+      text-align: left;
+    }
+
+    .menu{
+      right: 0px;
+    }
+
+    #contact-menu{
+      display: none;
+    }
+
+    .menu-full .section{
+      font-size: 23px;
+    }
 }
