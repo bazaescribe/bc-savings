@@ -18,6 +18,9 @@
     <link rel="stylesheet" type="text/css" href="res/css/text.css">
     <link rel="stylesheet" type="text/css" href="res/css/structure.css">
     <link rel="stylesheet" type="text/css" href="res/css/elements.css">
+    <link rel="stylesheet" type="text/css" href="res/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="res/slick/slick-theme.css"/>
+
 
     <link rel="stylesheet" type="text/css" href="res/css/animate.css">
     <link rel="stylesheet" type="text/css" href="res/css/animconfig.css">
@@ -180,22 +183,24 @@
       </div>
     </div>
 
-    <div class="row center pad-30">
-      <div class="container center soft-txt">
-        <div class="cell justify" style="max-width: 500px; margin: 0 auto;" id="mision">
-          <h3>Mission</h3>
-          Become an ally in the design of strategies for the public and private organizations to increase the efficiency by generating a structure of permanence and competitiveness.
-        </div>
-        <div class="cell justify" style="max-width: 500px; display: none; margin: 0 auto;" id="vision">
-          <h3>Vision</h3>
-          Consolidate our position as a prestigious consulting firm globally, in order to get the maximum optimization of our client’s resources.
-        </div>
-        <div class="cell justify" style="max-width: 500px; display: none; margin: 0 auto;" id="valores">
-          <h3>Values</h3>
-          We believe in inclusion as the core value of our organization, on behalf of the humanization, different abilities, gender equity, honesty and transparency, to strengthen the physical and psychological field of work teams, generating productive and profitable organizations.
+    <div class="row center pad-30 second-30 white-txt">
+      <div class="container">
+        <div class="your-class">
+          <div class="center">
+            <h3>Mission</h3>
+            Become an ally in the design of strategies for the public and private organizations to increase the efficiency by generating a structure of permanence and competitiveness.
+            <br><br>
+          </div>
+          <div class="center">
+            <h3>Vision</h3>
+            Consolidate our position as a prestigious consulting firm globally, in order to get the maximum optimization of our client’s resources.
+          </div>
+          <div class="center">
+            <h3>Values</h3>
+            We believe in inclusion as the core value of our organization, on behalf of the humanization, different abilities, gender equity, honesty and transparency, to strengthen the physical and psychological field of work teams, generating productive and profitable organizations.
+          </div>
         </div>
       </div>
-      <br><br><br>
     </div>
 
     <div class="footer">
@@ -302,10 +307,21 @@
     });
     </script>
 
-
-
     <script>
      new WOW().init();
+    </script>
+
+    <script type="text/javascript" src="res/slick/slick.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.your-class').slick({
+        autoplay: true,
+        autoplaySpeed: 8000,
+        dots: true,
+        arrows: true,
+        centerPadding: '40px'
+      });
+    });
     </script>
 
   </body>
