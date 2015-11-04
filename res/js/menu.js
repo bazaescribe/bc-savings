@@ -31,6 +31,30 @@ function scrollMenu(){
   }
 }
 
+function showDesc(a){
+  var value = a;
+  var elementName = "desc" + a;
+
+  element = document.getElementById(elementName);
+
+  for(i = 1; i <8; i++){
+    elementTemp = "desc" + i;
+    document.getElementById(elementTemp).style.display = "none";
+    console.log(elementTemp);
+  }
+
+  element.style.display = "inline-block";
+
+  console.log(elementName);
+}
+
+function hideDesc(){
+  for(i = 1; i <8; i++){
+    elementTemp = "desc" + i;
+    document.getElementById(elementTemp).style.display = "none";
+    console.log(elementTemp);
+  }
+}
 
 function showMenu(){
   var menu = document.getElementById('menu-full');

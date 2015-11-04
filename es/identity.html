@@ -36,7 +36,6 @@
   <body onscroll="scrollChange()">
 
     <header class="center" style="font-size: 20px;" id="menuBar">
-
       <div class="logo">
         <div class="logo-item">
           <a href="home.html">
@@ -44,7 +43,6 @@
           </a>
         </div>
       </div>
-
       <div class="menu" id="main-menu" onmouseout="">
         <a href="../home.html" class="m-item reg-txt" onmouseover="">
           <span>
@@ -63,6 +61,79 @@
         </a>
       </div>
     </header>
+
+    <div class="service-bar" onmouseout="hideDesc()">
+      <div class="service-row">
+        <div class="service-desc" id="desc1">
+          Asesoría Especializada
+        </div>
+        <a href="expert.html">
+          <div class="service-button" onmouseover="showDesc(1)">
+            <i class="fa fa-briefcase fa-2x"></i>
+          </div>
+        </a>
+      </div>
+      <div class="service-row">
+        <div class="service-desc" id="desc2">
+          Licitaciones
+        </div>
+        <a href="tenders.html">
+          <div class="service-button" onmouseover="showDesc(2)">
+            <i class="fa fa-book fa-2x"></i>
+          </div>
+        </a>
+      </div>
+      <div class="service-row">
+        <div class="service-desc" id="desc3">
+          Desarrollo de Tecnología
+        </div>
+        <a href="tech.html">
+          <div class="service-button" onmouseover="showDesc(3)">
+            <i class="fa fa-laptop fa-2x"></i>
+          </div>
+        </a>
+      </div>
+      <div class="service-row">
+        <div class="service-desc" id="desc4">
+          Compartir Conocimiento
+        </div>
+        <a href="knowledge.html">
+          <div class="service-button" onmouseover="showDesc(4)">
+            <i class="fa fa-graduation-cap fa-2x"></i>
+          </div>
+        </a>
+      </div>
+      <div class="service-row">
+        <div class="service-desc" id="desc5">
+          Auditoría Legal Corporativa
+        </div>
+        <a href="legal.html">
+          <div class="service-button" onmouseover="showDesc(5)">
+            <i class="fa fa-gavel fa-2x"></i>
+          </div>
+        </a>
+      </div>
+      <div class="service-row">
+        <div class="service-desc" id="desc6">
+          Identidad Corporativa
+        </div>
+        <a href="identity.html">
+          <div class="service-button service-selected" onmouseover="showDesc(6)">
+            <i class="fa fa-pencil fa-2x"></i>
+          </div>
+        </a>
+      </div>
+      <div class="service-row">
+        <div class="service-desc" id="desc7">
+          Servicios de Administración
+        </div>
+        <a href="management.html">
+          <div class="service-button" onmouseover="showDesc(7)">
+            <i class="fa fa-calculator fa-2x"></i>
+          </div>
+        </a>
+      </div>
+    </div>
 
     <div class="menu-full white-txt" style="display: none;" id="menu-full">
       <span class="section wow fadeIn">
@@ -87,7 +158,7 @@
         <div class="item wow flipInX ms-3">
           <i class="fa fa-laptop"></i>
           &nbsp;
-          Programas Tecnológicos
+          Desarrollo de Tecnología
         </div>
       </a>
       <a href="knowledge.html">
@@ -115,7 +186,7 @@
         <div class="item wow flipInX ms-5">
           <i class="fa fa-calculator"></i>
           &nbsp;
-          Servicios Administrativos
+          Servicios de Administración
         </div>
       </a>
       <br><br>
@@ -174,11 +245,9 @@
 
     <div class="row center pad-30">
       <div class="container justify soft-txt">
-        O identidad visual (IVC) es la manifestación física de la marca. Hace referencia a los aspectos visuales de la identidad de una organización.
+        La identidad corporativa está relacionada directamente con la historia o trayectoria de la empresa, proyectos y cultura corporativa, es decir, cómo se hacen las cosas.
         <br><br>
-        Esta identidad corporativa está relacionada directamente con los siguientes atributos: Historia o trayectoria de la empresa, proyectos y cultura corporativa, es decir, cómo se hacen las cosas. En general incluye un logotipo y elementos de soporte, generalmente coordinados por un grupo de líneas maestras que se recogen en un documento de tipo Manual Corporativo.
-        <br><br>
-        Estas líneas maestras establecen cómo en que más habitualmente se refleja la imagen de marca son:
+        En general incluye un logotipo y elementos de soporte, generalmente coordinados por un grupo de líneas maestras que se recogen en un documento de tipo visual.
       </div>
     </div>
 
@@ -188,7 +257,7 @@
           Diseño de Identidad
         </div>
         <div class="point">
-          Manual de Identidad
+          Diseño de Imagen
         </div>
         <div class="point">
           Diseño de Papelería Corporativa
@@ -198,6 +267,12 @@
         </div>
         <div class="point">
           Revisión de la Imagen de las Instalaciones
+        </div>
+        <div class="point">
+          Imagen
+        </div>
+        <div class="point">
+          Políticas de Personal
         </div>
       </div>
       <br><br>
@@ -228,7 +303,7 @@
           --><div class="quarters cell left main-txt" style="vertical-align: top;">
             <a href="expert.html">
               <div class="service-footer">
-                Asesoría de Expertos
+                Asesoría Especializada
               </div>
             </a>
             <a href="tenders.html">
@@ -238,7 +313,7 @@
             </a>
             <a href="tech.html">
               <div class="service-footer">
-                Programas Tecnológicos
+                Desarrollo de Tecnología
               </div>
             </a>
             <a href="knowledge.html">
@@ -258,7 +333,7 @@
             </a>
             <a href="management.html">
               <div class="service-footer">
-                Servicios Administrativos
+                Servicios de Administración
               </div>
             </a>
             <br><br>
