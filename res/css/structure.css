@@ -12,6 +12,22 @@ a{
   color: #656565;
 }
 
+.fa-linkedin:hover{
+  color: #125688;
+}
+
+.fa-facebook-square:hover{
+  color: #3B5998;
+}
+
+.fa-twitter:hover{
+  color: #4099FF;
+}
+
+.fa-youtube-play:hover{
+  color: red;
+}
+
 /************
   COVER
 *************/

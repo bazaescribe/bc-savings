@@ -19,6 +19,9 @@
     <link rel="stylesheet" type="text/css" href="res/css/structure.css">
     <link rel="stylesheet" type="text/css" href="res/css/elements.css">
 
+    <link rel="stylesheet" type="text/css" href="res/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="res/slick/slick-theme.css"/>
+
     <link rel="stylesheet" type="text/css" href="res/css/animate.css">
     <link rel="stylesheet" type="text/css" href="res/css/animconfig.css">
     <link rel="stylesheet" href="res/font-awesome/css/font-awesome.min.css">
@@ -331,7 +334,7 @@
             <br>
             isaperea@bcsavings.ceo
             <br>
-            <a href="#" target="_blank">
+            <a href="https://pa.linkedin.com/pub/isabel-perea/43/439/482" target="_blank">
               <i class="fa fa-linkedin"></i>
             </a>
           </span>
@@ -353,6 +356,32 @@
           </span>
         </div>
 
+      </div>
+    </div>
+
+    <div class="row center pad-30">
+      <div class="container justify soft-txt">
+        BC & Savings is a consulting firm in Mexico and Panama, this countries have been chosen because they are considered world production HUB countries (logistics, connectivity and fiscal). We love working with a wide range of clients - big and small, charities and private clients in order to be success.
+      </div>
+    </div>
+
+    <div class="row center pad-30 second-30 white-txt">
+      <div class="container">
+        <div class="your-class">
+          <div class="center">
+            <h3>Mission</h3>
+            Become an ally in the design of strategies for the public and private organizations to increase the efficiency by generating a structure of permanence and competitiveness.
+            <br><br>
+          </div>
+          <div class="center">
+            <h3>Vision</h3>
+            Consolidate our position as a prestigious consulting firm globally, in order to get the maximum optimization of our client’s resources.
+          </div>
+          <div class="center">
+            <h3>Values</h3>
+            We believe in inclusion as the core value of our organization, on behalf of the humanization, different abilities, gender equity, honesty and transparency, to strengthen the physical and psychological field of work teams, generating productive and profitable organizations.
+          </div>
+        </div>
       </div>
     </div>
 
@@ -397,15 +426,17 @@
             <br><br>
           </div><!--
           --><div class="quarters cell justify" style="padding: 0px 20px 0px 20px;">
-            Contáctanos
+            Contact Us
             <br><br>
-            Panamá
+            Panama
             <br>
             Tel. (+507) 6780 4365
             <br><br>
-            contacto@bcsavings.ceo
+            <a href="mailto:contacto@bcsavings.ceo">
+              contacto@bcsavings.ceo
+            </a>
             <br><br>
-            México
+            Mexico
             <br>
             Tel. (+52) 55 5967 0355
             <br><br><br><br>
@@ -547,7 +578,18 @@
     });
     </script>
 
-
+    <script type="text/javascript" src="res/slick/slick.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.your-class').slick({
+        autoplay: true,
+        autoplaySpeed: 8000,
+        dots: true,
+        arrows: true,
+        centerPadding: '40px'
+      });
+    });
+    </script>
 
     <script>
      new WOW().init();
