@@ -46,7 +46,7 @@
       </div>
 
       <div class="menu" id="main-menu" onmouseout="">
-        <a href="../home.html" class="m-item reg-txt" onmouseover="">
+        <a href="../contact.html" class="m-item reg-txt" onmouseover="">
           <span>
             EN
           </span>
@@ -181,25 +181,30 @@
     <div class="row center pad-30">
       <div class="container center soft-txt">
         <form action="mail.php" method="POST">
-            <label for="name">Name:</label>
+            <label for="name">Nombre:</label>
             <input type="text" name="name" value="" id="name" class="txt-field">
             <br><br>
-            <label for="company">Company:</label>
+            <label for="company">Compañía:</label>
             <input type="text" name="company" value="" id="company" class="txt-field">
             <br><br>
-            <label for="last-name">E-Mail</label>
+            <label for="last-name">Correo Electrónico:</label>
             <input type="text" name="mail" value="" id="last-name" class="txt-field">
             <br><br>
-            <label for="phone">Phone</label>
+            <label for="phone">Teléfono:</label>
             <input type="text" name="phone" value="" id="phone" class="txt-field">
             <br><br>
-            <label for="message">Message</label>
+            <label for="message">Mensaje:</label>
             <textarea name="message" cols="40" rows="5" class="txt-box"></textarea>
             <br><br><br>
             <input type="submit" value="Enviar" class="ghost-color-main" style="width: 50%;">
             <!--<input type="button" name="name" value="Enviar" class="ghost-color" style="width: 50%;">-->
         </form>
       </div>
+    </div>
+
+    <div class="row">
+      <div class="mids cell center pad-50 white-txt" id="map" style="height: 300px;"></div><!--
+      --><div class="mids cell center pad-50 white-txt" id="map2" style="height: 300px;"></div>
     </div>
 
     <div class="row">
@@ -263,7 +268,7 @@
             </a>
             <a href="identity.html">
               <div class="service-footer">
-                Identidad Corporativa Corporativa
+                Identidad Corporativa
               </div>
             </a>
             <a href="management.html">
@@ -317,7 +322,48 @@
     });
     </script>
 
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map');
+        var mapOptions = {
+          center: new google.maps.LatLng(19.394789, -99.173416),
+          zoom: 16,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          scrollwheel: false
+        }
 
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(19.394789, -99.173416),
+          title: 'Hello World!'
+        });
+
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+        marker.setMap(map);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map2');
+        var mapOptions = {
+          center: new google.maps.LatLng(8.975834, -79.522209),
+          zoom: 16,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          scrollwheel: false
+        }
+
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(8.975834, -79.522209),
+          title: 'Hello World!'
+        });
+
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+        marker.setMap(map);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 
     <script>
      new WOW().init();

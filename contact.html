@@ -48,7 +48,7 @@
       </div>
 
       <div class="menu" id="main-menu" onmouseout="">
-        <a href="es/home.html" class="m-item reg-txt" onmouseover="">
+        <a href="es/contact.html" class="m-item reg-txt" onmouseover="">
           <span>
             ES
           </span>
@@ -189,16 +189,16 @@
             <label for="company">Company:</label>
             <input type="text" name="company" value="" id="company" class="txt-field">
             <br><br>
-            <label for="last-name">E-Mail</label>
+            <label for="last-name">E-Mail:</label>
             <input type="text" name="mail" value="" id="last-name" class="txt-field">
             <br><br>
-            <label for="phone">Phone</label>
+            <label for="phone">Phone:</label>
             <input type="text" name="phone" value="" id="phone" class="txt-field">
             <br><br>
-            <label for="message">Message</label>
+            <label for="message">Message:</label>
             <textarea name="message" cols="40" rows="5" class="txt-box"></textarea>
             <br><br><br>
-            <input type="submit" value="Enviar" class="ghost-color-main" style="width: 50%;">
+            <input type="submit" value="Send" class="ghost-color-main" style="width: 50%;">
             <!--<input type="button" name="name" value="Enviar" class="ghost-color" style="width: 50%;">-->
         </form>
       </div>
@@ -329,19 +329,19 @@
       function initialize() {
         var mapCanvas = document.getElementById('map');
         var mapOptions = {
-          center: new google.maps.LatLng(19.393047, -99.174115),
+          center: new google.maps.LatLng(19.394789, -99.173416),
           zoom: 16,
           mapTypeId: google.maps.MapTypeId.ROADMAP,
           scrollwheel: false
         }
 
         var marker = new google.maps.Marker({
-          position: new google.maps.LatLng(19.418227, -99.218036),
-          map: map,
+          position: new google.maps.LatLng(19.394789, -99.173416),
           title: 'Hello World!'
         });
 
-        var map = new google.maps.Map(mapCanvas, mapOptions)
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+        marker.setMap(map);
       }
       google.maps.event.addDomListener(window, 'load', initialize);
     </script>
@@ -350,19 +350,19 @@
       function initialize() {
         var mapCanvas = document.getElementById('map2');
         var mapOptions = {
-          center: new google.maps.LatLng(8.975662, -79.521681),
+          center: new google.maps.LatLng(8.975834, -79.522209),
           zoom: 16,
           mapTypeId: google.maps.MapTypeId.ROADMAP,
           scrollwheel: false
         }
 
         var marker = new google.maps.Marker({
-          position: new google.maps.LatLng(19.418227, -99.218036),
-          map: map,
+          position: new google.maps.LatLng(8.975834, -79.522209),
           title: 'Hello World!'
         });
 
-        var map = new google.maps.Map(mapCanvas, mapOptions)
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+        marker.setMap(map);
       }
       google.maps.event.addDomListener(window, 'load', initialize);
     </script>

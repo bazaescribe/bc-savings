@@ -660,7 +660,7 @@ label{
     }
 
     .thirds{
-
+      width: 50%;
     }
 
     .quarters{
@@ -688,6 +688,7 @@ label{
     }
 
     .thirds{
+      width: 100%;
     }
 
     .quarters{
