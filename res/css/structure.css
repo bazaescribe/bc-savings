@@ -660,6 +660,10 @@ label{
       padding: 5px;
       margin: 2px;
     }
+
+    .service-bar{
+      display: none;
+    }
 }
 
 @media screen and (max-width: 500px) {
